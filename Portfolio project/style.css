@@ -1,0 +1,140 @@
+body {
+  background-image: linear-gradient(to left, purple, gray, indigo);
+}
+
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 20px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.right {
+  float: right;
+}
+
+.table {
+  display: table;
+  width: 100%; /* Make the table take full width */
+}
+
+.row {
+  display: table-row; /* Define rows */
+}
+
+.col1, .col2 {
+  display: table-cell; /* Define columns */
+  padding: 10px; /* Add some padding */
+}
+
+.col1 {
+  width: 75%;
+}
+
+.col2 {
+  width: 25%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .table {
+    display: block; /* Change to block for mobile */
+  }
+  .row {
+    display: block; /* Stack rows on mobile */
+  }
+  .col1, .col2 {
+    display: block; /* Stack columns on mobile */
+    width: 100%; /* Full width */
+    margin-bottom: 10px; /* Add some space between */
+  }
+}
+* {
+  box-sizing: border-box; /* Make sure padding and borders are included in the total width */
+}
+
+html, body {
+  height: 100%; /* Ensure the body takes up full height */
+  margin: 0; /* Remove default margins */
+}
+
+body {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack children vertically */
+}
+
+main {
+  flex: 1; /* Allow main content to grow and fill available space */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0; /* Adjusted vertical padding */
+  margin-top: auto; /* Pushes the footer to the bottom */
+  width: 100%; /* Full width */
+  overflow: hidden; /* Prevent overflow */
+}
+
+footer p {
+  margin: 0;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 5px 0; /* Adjusted margin */
+}
+
+footer li {
+  display: inline-block; /* Use inline-block for better control */
+  margin: 0 5px; /* Adjust spacing */
+}
+
+footer a {
+  color: white; 
+  text-decoration: none; 
+}
+
+footer a:hover {
+  text-decoration: underline; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  footer ul {
+    display: flex;
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    align-items: center; /* Center align links */
+  }
+
+  footer li {
+    margin: 5px 0; /* Add vertical spacing */
+  }
+}

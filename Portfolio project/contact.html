@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Stephen Garry</title>
+    <style>
+        body {
+            background-image: linear-gradient(to left, purple, gray, indigo);
+            font-family: Arial, sans-serif; /* General font styling */
+            color: white; /* Text color */
+            padding: 20px; /* Padding for the body */
+        }
+        h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+        form {
+            max-width: 600px; /* Limit the form width */
+            margin: auto; /* Center the form */
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 30px; /* Padding inside the form */
+            border-radius: 10px; /* Rounded corners */
+        }
+        label {
+            display: block; /* Each label on a new line */
+            margin-top: 10px; /* Spacing above each label */
+        }
+        input, textarea {
+            width: 100%; /* Full width inputs */
+            padding: 10px; /* Padding for inputs */
+            margin-top: 5px; /* Space between label and input */
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Rounded corners */
+        }
+        button {
+            background-color: black;
+            color: white; /* Button text color */
+            border: none;
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px 20px; /* Padding for button */
+            cursor: pointer; /* Cursor change on hover */
+            margin-top: 15px; /* Space above button */
+            display: inline-block; /* Make it an inline block */
+            text-decoration: none; /* Remove underline from anchor */
+        }
+        button:hover {
+            background-color: gray; /* Button hover effect */
+        }
+        h2 {
+            text-align: center;
+        }
+        .social-links {
+            text-align: center; /* Center social links */
+            margin-top: 20px; /* Space above links */
+        }
+        .social-links a {
+            margin: 0px 10px; /* Space between links */
+            color: white; /* Link color */
+            text-decoration: none; /* No underline */
+        }
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px; /* Padding on small screens */
+            }
+            h1 {
+                font-size: 30px; /* Smaller title on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Me</h1>
+    <p>If you have any questions or would like to discuss potential collaborations, feel free to reach out using the form below!</p>
+    
+    <form action="contact-form-handler.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+    
+    <h2>Follow Me</h2>
+    <div class="social-links">
+        <a href="https://x.com/stephenGarry605e" target="_blank">Twitter</a>
+        <a href="https://www.linkedin.com/in/stephen-garry-4a2395303/" target="_blank">LinkedIn</a>
+        <a href="mailto:stephengarry605@gmail.com">Email</a>
+    </div>
+
+    <!-- Updated Back Button -->
+    <div style="text-align: center; margin-top: 20px;">
+        <button>
+            <a href="index.html">Back</a>
+        </button>
+    </div>
+</body>
+</html>
